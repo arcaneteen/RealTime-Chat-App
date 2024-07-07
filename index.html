@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Chat</title>
+    
+</head>
+
+<body>
+
+    <!--Main section-->
+    <section>
+
+        <!--Main Box-->
+        <div class="box">
+
+            <!--Inside Main Box - Top Box-->
+            <div class="top-box">
+                <img src="/logo1.svg" alt="" class="logo">
+                <button class="closebtn" onclick="window.location.reload();">Exit</button>
+            </a>
+            </div>
+            <!--Top Box Ended-->
+
+
+            <!--Inside Main Box - Left Box-->
+            <div class="left-box">
+                <h6><em>You</em> Joined. </h6>
+            </div>
+            <!--Left Box Ended-->
+
+            <!--Inside Main Box - Chat Box-->
+            <div class="chat-box">
+                <!--Message Container-->
+                <div class="container">
+                    <!-- <div class="message left">Ravi: How are you</div> -->
+                    <!-- <div class="message right">Raj: I am fine. wbu</div> -->
+                </div>
+                <!--Message  Container Ended-->
+
+                <!--Input Box & Send btn-->
+                <div>
+                    <!-- <form id="send-form" action="#"> -->
+                        <textarea id="messageInp" class="textbox" cols=50 rows=1 placeholder="Type Something.."></textarea>
+                        <!-- <input type="submit" value="Send" class="sendbtn"> -->
+            
+                </div>
+                <!--Input Box & Send btn Ended-->
+            </div>
+            <!--Chat Box Ended-->
+
+        </div>
+        <!--Main Box Ended-->
+
+    </section>
+    <!--Main Section Ended-->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
